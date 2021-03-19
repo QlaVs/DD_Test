@@ -84,7 +84,7 @@ public class DD_Test {
                     second err cather
                     check each iteration (regex using)
                      */
-                    if (!sub_str.toString().matches("[a-z]\\d\\[[^\\W].+|\\d\\[[^\\W].+")) {
+                    if (!sub_str.toString().matches("[a-z]*\\d\\[[^\\W].+|\\d\\[[^\\W].+")) {
                         err();
                     } else {
                         //Recursive check (each iteration goes deeper (2[g3[f]] -> g3[f] -> f)
